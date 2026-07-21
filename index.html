@@ -14,18 +14,22 @@ header{ text-align:center; margin-bottom:48px; }
 header h1{ font-size:32px; color:#222; margin-bottom:8px; }
 header p{ color:#888; font-size:14px; }
 .grid{
-    display:grid; grid-template-columns:repeat(auto-fill,minmax(200px,1fr));
-    gap:20px; max-width:900px; margin:0 auto;
+    display:grid; grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+    gap:20px; max-width:960px; margin:0 auto;
 }
 .card{
     display:block; background:white; border-radius:12px;
-    padding:32px 20px; text-align:center; text-decoration:none;
+    overflow:hidden; text-align:center; text-decoration:none;
     box-shadow:0 2px 12px rgba(0,0,0,0.06);
     transition:transform 0.2s,box-shadow 0.2s;
 }
 .card:hover{ transform:translateY(-4px); box-shadow:0 6px 24px rgba(0,0,0,0.12); }
-.card-icon{ font-size:36px; margin-bottom:12px; }
-.card-title{ font-size:16px; color:#333; font-weight:500; word-break:break-all; }
+.card-img{
+    width:100%; height:180px; object-fit:cover;
+    display:block; background:#f0f0f0;
+}
+.card-icon{ font-size:36px; padding:32px 20px 12px; display:block; }
+.card-title{ font-size:16px; color:#333; font-weight:500; word-break:break-all; padding:12px 20px 20px; }
 footer{ text-align:center; color:#bbb; font-size:12px; margin-top:48px; }
 </style>
 </head>
@@ -36,43 +40,58 @@ footer{ text-align:center; color:#bbb; font-size:12px; margin-top:48px; }
 </header>
 <div class="grid">
             <a class="card" href="outfit1/">
-                <div class="card-icon">&#x1f457;</div>
+                <img class="card-img" src="outfit1/thumbnail.png" onerror="this.style.display='none';this.nextElementSibling.style.display='block';" loading="lazy" alt="">
+                <div class="card-icon" style="display:none">&#x1f457;</div>
                 <div class="card-title">outfit1</div>
             </a>
             <a class="card" href="outfit10/">
-                <div class="card-icon">&#x1f457;</div>
+                <img class="card-img" src="outfit10/thumbnail.png" onerror="this.style.display='none';this.nextElementSibling.style.display='block';" loading="lazy" alt="">
+                <div class="card-icon" style="display:none">&#x1f457;</div>
                 <div class="card-title">outfit10</div>
             </a>
+            <a class="card" href="outfit11/">
+                <img class="card-img" src="outfit11/thumbnail.png" onerror="this.style.display='none';this.nextElementSibling.style.display='block';" loading="lazy" alt="">
+                <div class="card-icon" style="display:none">&#x1f457;</div>
+                <div class="card-title">outfit11</div>
+            </a>
             <a class="card" href="outfit2/">
-                <div class="card-icon">&#x1f457;</div>
+                <img class="card-img" src="outfit2/thumbnail.png" onerror="this.style.display='none';this.nextElementSibling.style.display='block';" loading="lazy" alt="">
+                <div class="card-icon" style="display:none">&#x1f457;</div>
                 <div class="card-title">outfit2</div>
             </a>
             <a class="card" href="outfit3/">
-                <div class="card-icon">&#x1f457;</div>
+                <img class="card-img" src="outfit3/thumbnail.png" onerror="this.style.display='none';this.nextElementSibling.style.display='block';" loading="lazy" alt="">
+                <div class="card-icon" style="display:none">&#x1f457;</div>
                 <div class="card-title">outfit3</div>
             </a>
             <a class="card" href="outfit4/">
-                <div class="card-icon">&#x1f457;</div>
+                <img class="card-img" src="outfit4/thumbnail.png" onerror="this.style.display='none';this.nextElementSibling.style.display='block';" loading="lazy" alt="">
+                <div class="card-icon" style="display:none">&#x1f457;</div>
                 <div class="card-title">outfit4</div>
             </a>
             <a class="card" href="outfit5/">
-                <div class="card-icon">&#x1f457;</div>
+                <img class="card-img" src="outfit5/thumbnail.png" onerror="this.style.display='none';this.nextElementSibling.style.display='block';" loading="lazy" alt="">
+                <div class="card-icon" style="display:none">&#x1f457;</div>
                 <div class="card-title">outfit5</div>
             </a>
             <a class="card" href="outfit6/">
-                <div class="card-icon">&#x1f457;</div>
+                <img class="card-img" src="outfit6/thumbnail.png" onerror="this.style.display='none';this.nextElementSibling.style.display='block';" loading="lazy" alt="">
+                <div class="card-icon" style="display:none">&#x1f457;</div>
                 <div class="card-title">outfit6</div>
             </a>
             <a class="card" href="outfit7/">
-                <div class="card-icon">&#x1f457;</div>
+                <img class="card-img" src="outfit7/thumbnail.png" onerror="this.style.display='none';this.nextElementSibling.style.display='block';" loading="lazy" alt="">
+                <div class="card-icon" style="display:none">&#x1f457;</div>
                 <div class="card-title">outfit7</div>
             </a>
             <a class="card" href="outfit8/">
-                <div class="card-icon">&#x1f457;</div>
+                <img class="card-img" src="outfit8/thumbnail.png" onerror="this.style.display='none';this.nextElementSibling.style.display='block';" loading="lazy" alt="">
+                <div class="card-icon" style="display:none">&#x1f457;</div>
                 <div class="card-title">outfit8</div>
             </a>
             <a class="card" href="outfit9/">
-                <div class="card-icon">&#x1f457;</div>
+                <img class="card-img" src="outfit9/thumbnail.png" onerror="this.style.display='none';this.nextElementSibling.style.display='block';" loading="lazy" alt="">
+                <div class="card-icon" style="display:none">&#x1f457;</div>
                 <div class="card-title">outfit9</div>
             </a>
 
